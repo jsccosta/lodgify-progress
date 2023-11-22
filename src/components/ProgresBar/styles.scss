@@ -1,0 +1,36 @@
+.animated-progress {
+  width: 100%;
+  height: 22px;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  position: relative;
+  background-color: var(--success-green-light);
+
+  span {
+    height: 100%;
+    display: block;
+    color: var(--light-red-tint);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &.progress-bar {
+    span {
+      background-color: var(--success-green-semi-dark);
+      border-radius: var(--border-radius);
+      &::after {
+        content: attr(data-progress);
+        font-family: "SourceSansPro";
+        font-size: 18px;
+        font-weight: normal;
+        margin-left: auto;
+        padding-right: 4px;
+      }
+    }
+  }
+}

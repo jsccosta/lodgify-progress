@@ -1,0 +1,24 @@
+:root {
+  --base-white: #ffffff;
+  --body-background: #f2f2f2;
+  --light-red-tint: #fffbfb;
+  --red-tint: #dddddd;
+  --success-green-semi-dark: #00b797;
+  --success-green-light: #f2fbfa;
+  --very-light-grey: #cccccc;
+  --light-grey: #999999;
+  --border-radius: 24px;
+
+  --border-styling: 1px solid var(var(--very-light-grey));
+
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--body-background);
+}

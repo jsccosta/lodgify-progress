@@ -1,0 +1,10 @@
+.task{
+  display: flex;
+  height: 36px;
+  padding: 16px;
+  align-items: center;
+  input,
+  label{
+    cursor: pointer;
+  }
+}
